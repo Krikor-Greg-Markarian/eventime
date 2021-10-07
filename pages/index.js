@@ -3,6 +3,7 @@ import cn from "classnames";
 import Eventimeitem from "../Src/Componnets/Eventimeitem";
 import Card from "../Src/Componnets/Card";
 import CardItems from "../Src/Componnets/CardItems";
+import Box from "../Src/Componnets/Box";
 
 const eventime = [
   {
@@ -84,6 +85,17 @@ const manyTexts = [
   },
 ];
 
+const phantom = [
+  {
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2018/01/11/21/27/laptop-3076957__340.jpg",
+    secondImageUrl: "",
+    title: "PHANTOM BUSINESS JOOMLA TEMPLATE",
+    description: "Making phantom joomla template",
+    discount: "$30",
+  },
+];
+
 export default function Home(props) {
   return (
     <div>
@@ -122,6 +134,18 @@ export default function Home(props) {
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+        {phantom.map((item, idx) => (
+          <Box
+            imageUrl={item.imageUrl}
+            secondImageUrl={item.secondImageUrl}
+            title={item.title}
+            description={item.description}
+            discount={item.discount}
+          />
+        ))}
       </section>
     </div>
   );
