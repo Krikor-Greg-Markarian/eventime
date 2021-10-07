@@ -1,0 +1,10 @@
+
+
+
+.mainContainer {
+    box-shadow: 0px 0px 20px 10px rgba(172, 208, 210, 0.2);
+    -webkit-box-shadow: 0px 0px 20px 10px rgba(172, 208, 210, 0.2);
+    -moz-box-shadow: 0px 0px 20px 10px rgba(172, 208, 210, 0.2);
+    background-color: white;
+  }
+  
