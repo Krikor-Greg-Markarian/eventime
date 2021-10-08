@@ -70,7 +70,7 @@ function Eventimeitem(props) {
         </div>
       </div>
       <div className={cn("pl-32 pt-5")}>
-        <img className={cn("rounded w-9/12")} src={props.imageUrl} alt="" />
+        <img className={cn("rounded")} src={props.imageUrl} alt="" />
       </div>
     </div>
   );

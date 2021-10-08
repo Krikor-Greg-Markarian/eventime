@@ -40,7 +40,7 @@ function Box(props) {
         </p>
       </div>
 
-      <div className={cn("grid grid-cols-3")}>
+      <div className={cn("grid md:grid-cols-3")}>
         {props.text.map((item, idx) => (
           <div key={idx} className={cn("col-span-1")}>
             <Tag

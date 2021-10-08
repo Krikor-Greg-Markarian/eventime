@@ -48,7 +48,7 @@ const manyTexts = [
     month: "month",
     ButtonName: "Get started",
     priceTextColor: "bg-blue-600",
-    nameBackgroundColor: "bg-blue-300",
+    nameBackgroundColor: "bg-gradient-to-r from-blue-600 to-blue-400",
     buttonBackgroundColor: "bg-blue-400",
     buttonTextColor: "text-white",
     borderColor: "border-2 border-red-300",
@@ -92,7 +92,6 @@ const phantom = [
     title: "PHANTOM BUSINESS JOOMLA TEMPLATE",
     description: "Making phantom joomla template",
     discount: "$30",
-    selected: true,
     backgroundColor: "bg-red-300",
 
     text: [

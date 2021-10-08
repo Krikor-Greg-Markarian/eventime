@@ -9,15 +9,16 @@ function Tag(props) {
   };
 
   return (
-    <div className={cn("bg-black")}>
+    <div className={cn("bg-black rounded")}>
       <div className="flex">
         <div className="flex-shrink pt-3">
           {props.selected ? (
-            <FiShoppingCart className={cn("text-white ")} />
+            <FiShoppingCart className={cn("text-white")} />
           ) : (
             <FaHeart className={cn("text-white")} />
           )}
         </div>
+
         <div className="flex-shrink text-white text-center p-3 pl-2 text-sm">
           {props.text}
         </div>

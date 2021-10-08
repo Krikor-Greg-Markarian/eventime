@@ -9,7 +9,7 @@ function TextItem(props) {
       <div className="flex">
         <div className="flex-shrink">
           {props.hasFeature ? (
-            <IoMdCheckmark className={cn("text-blue-800 ")} />
+            <IoMdCheckmark className={cn("text-blue-600 ")} />
           ) : (
             <IoMdClose className={cn("text-gray-500")} />
           )}
