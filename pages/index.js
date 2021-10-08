@@ -92,7 +92,7 @@ const phantom = [
     title: "PHANTOM BUSINESS JOOMLA TEMPLATE",
     description: "Making phantom joomla template",
     discount: "$30",
-    backgroundColor: "bg-red-300",
+    tagLikeBackgroundColor: "bg-blue-800",
 
     text: [
       { text: "580 Sold", selected: true },
@@ -123,7 +123,7 @@ export default function Home(props) {
       <section className={cn("mt-8")}>
         <div className={cn("grid md:grid-cols-3 gap-4")}>
           {manyTexts.map((item, idx) => (
-            <div className={cn("col-span-1")}>
+            <div key={idx} className={cn("col-span-1")}>
               <CardItems
                 name={item.name}
                 dolorSign={item.dolorSign}
@@ -151,6 +151,7 @@ export default function Home(props) {
             title={item.title}
             description={item.description}
             text={item.text}
+            tagLikeBackgroundColor={item.tagLikeBackgroundColor}
           />
         ))}
       </section>

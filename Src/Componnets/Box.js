@@ -4,7 +4,7 @@ import Tag from "./Tag";
 
 function Box(props) {
   const styleclass = {
-    backgroundColor: props.backgroundColor ?? "bg-black",
+    tagLikeBackgroundColor: props.tagLikeBackgroundColor ?? "bg-black",
   };
   return (
     <div className={cn("border-2 w-7/12 mt-8")}>
@@ -46,7 +46,7 @@ function Box(props) {
             <Tag
               selected={item.selected}
               text={item.text}
-              backgroundColor={item.backgroundColor}
+              tagLikeBackgroundColor={item.tagLikeBackgroundColor}
             />
           </div>
         ))}

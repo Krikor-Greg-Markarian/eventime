@@ -5,13 +5,13 @@ import { FaHeart } from "react-icons/fa";
 
 function Tag(props) {
   const styleclass = {
-    backgroundColor: props.backgroundColor ?? "bg-black",
+    tagLikeBackgroundColor: props.tagLikeBackgroundColor ?? "bg-black",
   };
 
   return (
     <div className={cn("bg-black rounded")}>
-      <div className="flex justify-center">
-        <div className="flex-shrink pt-3">
+      <div className={cn("flex justify-center")}>
+        <div className={cn("flex-shrink pt-3")}>
           {props.selected ? (
             <FiShoppingCart className={cn("text-white")} />
           ) : (
@@ -19,7 +19,12 @@ function Tag(props) {
           )}
         </div>
 
-        <div className="flex-shrink text-white text-center p-3 pl-2 text-sm">
+        <div
+          className={cn(
+            "flex-shrink text-white text-center p-3 pl-2 text-sm",
+            styleclass.tagLikeBackgroundColor
+          )}
+        >
           {props.text}
         </div>
       </div>
