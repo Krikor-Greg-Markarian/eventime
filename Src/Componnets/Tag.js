@@ -10,7 +10,7 @@ function Tag(props) {
 
   return (
     <div className={cn("bg-black rounded")}>
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="flex-shrink pt-3">
           {props.selected ? (
             <FiShoppingCart className={cn("text-white")} />
