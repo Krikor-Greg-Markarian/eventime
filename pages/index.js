@@ -1,7 +1,6 @@
 // import styles from "../styles/mainContainer.css";
 import cn from "classnames";
 import Eventimeitem from "../Src/Componnets/Eventimeitem";
-import Card from "../Src/Componnets/Card";
 import CardItems from "../Src/Componnets/CardItems";
 import Box from "../Src/Componnets/Box";
 
@@ -93,6 +92,14 @@ const phantom = [
     title: "PHANTOM BUSINESS JOOMLA TEMPLATE",
     description: "Making phantom joomla template",
     discount: "$30",
+    selected: true,
+    backgroundColor: "bg-red-300",
+
+    text: [
+      { text: "580 Sold", selected: true },
+      { text: "45", selected: false },
+      { text: "PRODUCTS SHOP", selected: false },
+    ],
   },
 ];
 
@@ -141,9 +148,10 @@ export default function Home(props) {
           <Box
             imageUrl={item.imageUrl}
             secondImageUrl={item.secondImageUrl}
+            discount={item.discount}
             title={item.title}
             description={item.description}
-            discount={item.discount}
+            text={item.text}
           />
         ))}
       </section>

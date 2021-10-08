@@ -1,15 +1,19 @@
 import React from "react";
 import cn from "classnames";
+import Tag from "./Tag";
 
 function Box(props) {
+  const styleclass = {
+    backgroundColor: props.backgroundColor ?? "bg-black",
+  };
   return (
     <div className={cn("border-2 w-7/12 mt-8")}>
       <div
-        className={cn("relative")}
+        className={cn("relative bg-nature-background hover:bg-none bg-black")}
         style={{
           width: "100%",
           height: "300px",
-          backgroundImage: `url(${props.imageUrl})`,
+          // backgroundImage: `url(${props.imageUrl})`,
         }}
       >
         <div
@@ -34,6 +38,18 @@ function Box(props) {
         <p className={cn("text-gray-500 text-sm font-bold pt-2 pb-2")}>
           {props.description}
         </p>
+      </div>
+
+      <div className={cn("grid grid-cols-3")}>
+        {props.text.map((item, idx) => (
+          <div key={idx} className={cn("col-span-1")}>
+            <Tag
+              selected={item.selected}
+              text={item.text}
+              backgroundColor={item.backgroundColor}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
