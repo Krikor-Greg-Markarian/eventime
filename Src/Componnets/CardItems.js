@@ -16,15 +16,15 @@ function CardItems(props) {
     <Card>
       <div
         className={cn(
-          "flex justify-center items-center p-4 rounded-lg",
+          "flex justify-center items-center p-4 rounded-t-lg",
           styleClass.nameBackgroundColor
         )}
       >
         <p className={cn("")}>{props.name}</p>
       </div>
       <div className={cn("p-4")}>
-        <div class="flex pl-6 pt-2 pb-3">
-          <div class="flex-shrink ">
+        <div className="flex pl-6 pt-2 pb-3">
+          <div className="flex-shrink ">
             <p className={cn("inline text-2xl text-gray-500")}>
               {" "}
               {props.dolorSign}
@@ -34,7 +34,7 @@ function CardItems(props) {
               {props.price}
             </p>
           </div>
-          <div class="flex-shrink pl-1">
+          <div className="flex-shrink pl-1">
             <p className={cn("text-gray-500 text-sm")}>{props.per}</p>
             <p className={cn("text-sm text-gray-500")}> {props.month}</p>
           </div>
